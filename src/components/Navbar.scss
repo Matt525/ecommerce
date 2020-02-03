@@ -1,0 +1,126 @@
+@media(min-width: 768px){
+
+
+#navbar{
+  font-family: Montserrat,sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  background: #16191b!important;
+  height: 55px;
+  width: 100vw;
+  box-shadow: 0.5px 0.5px #777;
+  padding-top: 0%!important;
+  padding-bottom: 0%!important;
+  color: white;
+  box-shadow: 0 0.5rem 1rem rgba(31, 30, 30, 0.05), inset 0 -1px 0 rgba(0,0,0,.1);
+z-index: 100;
+  
+}
+
+
+
+#header-title{
+  float: left;
+  margin-left: 210px;
+  display: flex;
+  margin-top: 13px;
+  margin-bottom: 10px;
+  font-family: Montserrat,sans-serif;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  letter-spacing: 4px;
+
+
+}
+
+.right-group{
+  display: flex!important;
+  flex-direction: row;
+  justify-content: flex-end!important;
+  align-items: center!important;
+  height: 100%;
+  margin-right: 230px;
+  padding: 0%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  
+  p{
+    margin: 10px;
+    padding-right: 20px;
+
+    
+  }
+  p:hover{
+    color: #7bc3d1;
+    transition: 500ms;
+    cursor: pointer;
+  }
+
+  .highlight { 
+    color: #7bc3d1;
+  }
+  
+}
+
+  .mobile-menu{
+    display: none;
+  }
+
+
+
+}
+
+.stick { 
+  position: fixed!important;
+  top: 0;
+  width: 100%;
+  
+}
+
+
+.fa-bars { 
+  opacity: 0; 
+}
+
+@media(max-width: 768px){
+.nav-selection{
+  display: none;
+}
+
+#navbar{
+  font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-weight: 400;
+  background: #212529;
+  height: 60px;
+  width: 100vw;
+  box-shadow: 0.5px 0.5px #777;
+  margin: 0%;
+  padding-top: 0%!important;
+  padding-bottom: 0%!important;
+  color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+
+}
+
+#header-title{
+  
+    float: left;
+    margin-left: 50px;
+
+  }
+  
+
+  h1{
+    padding-top: 10%;
+  }
+
+  .mobile-menu{
+    display: visible;
+  }
+
+
+  
+
+}
+
+
+

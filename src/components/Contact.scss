@@ -1,0 +1,106 @@
+@import './partial.scss';
+
+
+  #contact { 
+  background: rgb(31, 40, 61);
+  height: 105vh!important;
+  margin: 0%;
+  padding: 0%;
+}
+
+  .section-titles { 
+    color: #fff;
+    background-image: url("https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1526&q=80");
+    @include center;
+    height: 40vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    h1 { 
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 50px;
+      letter-spacing: 10px;
+      margin-bottom: 10px;
+      animation: slideRight 2s;
+      background: #0a0a0a98;
+      text-align: center!important;
+      font-weight: 600;
+    }
+  }
+
+
+  .contact-content { 
+  width: 100%;
+  height: 100%;
+}
+
+  .left-col { 
+  width: 50%;
+  height: 500px;
+  float: left;
+  border-right: solid 1px rgb(40, 52, 80);
+  color: #fff!important;
+
+  form { 
+    margin-left: 200px;
+    margin-top: 125px;
+    width: 1000px!important;
+    
+  
+  #name { 
+    background: rgb(45, 59, 92)!important;
+    width: 450px!important;
+    border-bottom: none!important;
+    padding-left: 20px;
+    color: #fff!important;
+    }
+  #email { 
+    background: rgb(45, 59, 92)!important;
+    width: 450px!important;
+    border-bottom: none!important;
+    padding-left: 20px;
+    color: #fff!important;
+    }
+
+    .half{ 
+      display: inline-block;
+      margin-right: 25px;
+    }
+
+    
+div label {
+  display: block;
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+  textarea { 
+    background: rgb(45, 59, 92)!important;
+    height: 300px;
+    border: none;
+    width: 960px;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: #fff;
+    } 
+  }
+
+}
+
+.right-col { 
+    padding: 100px;
+    width: 50%;
+    float: right;
+    color: #fff;
+  
+  .contact-method { 
+    margin-left: 50px;
+    
+  }
+  
+}

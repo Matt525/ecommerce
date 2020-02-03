@@ -1,0 +1,153 @@
+@import './partial.scss';
+
+#skills-container { 
+  // @include center;
+  height: 150vh;
+  width: 100vw;
+  color: black!important;
+  background: rgb(255, 255, 255);
+  font-weight: 800;
+
+  .section-title { 
+    background: url('https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+   @include center;
+   height: 40vh;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   font-size: 50px;
+
+
+ 
+
+    h1 { 
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 50px;
+      letter-spacing: 10px;
+			margin-bottom: 10px;
+			animation: slideRight 2s;
+      background: #0a0a0a98;
+      text-align: center!important;
+      font-weight: 600;
+      
+      
+    }
+  }
+
+  // Skills Section
+
+.skills-wrapper{ 
+  display: flex;
+  flex-direction: row;
+
+
+  .skill{ 
+    width: 20%;
+    height: 60vh;
+    transition: 0.5s ease;
+
+    .title{ 
+      @include center;
+      opacity: 0;
+      background: rgba(43, 43, 43, 0.493);
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+
+    .title2{
+      @include center;
+      opacity: 0;
+      background: rgba(43, 43, 43, 0.493);
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+
+    &.html { 
+      background: url("https://i.pinimg.com/originals/31/b1/c5/31b1c5e28142f50e2aad73efaa2e63c1.jpg");
+      background-position: center;
+    }
+
+    &.css { 
+      background: url("https://www.filepicker.io/api/file/B7GS3RbESv2K1xXS7Meb");
+      background-position: center;
+      
+    }
+    &.javascript { 
+      background: url("https://techtalk.vn/wp-content/uploads/2017/03/javascript.jpg");
+      background-position: center;
+      
+    }
+    &.jquery { 
+      background: url("https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/JQuery_logo-512.png");
+      background-position: center;
+      
+    }
+    &.python { 
+      background: url("https://cdn.wallpapersafari.com/86/47/beOFkU.jpg");
+      background-position: center;
+      
+    }
+    &.react { 
+      background: url("https://c.wallhere.com/photos/0a/93/reactJS_JavaScript_Typescript_programming_programming_language_React_Native_Facebook_React-1568827.jpg!d");
+      background-position: center;
+      
+    }
+
+    &.node { 
+      background: url("https://cdn4.iconfinder.com/data/icons/logos-3/456/nodejs-new-pantone-black-512.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 50vh!important;
+      width: 33.33%!important;
+      border-right: 1px solid #333;
+
+    }
+
+    &.git { 
+      background: url("https://images4.alphacoders.com/985/985805.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 33.33%!important;
+      height: 50vh!important;
+      
+    }
+
+    &.express { 
+      background: url("https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_1489710851/express-js.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 33.33%!important;
+      height: 50vh!important;
+      
+    }
+  
+  }
+  
+  .skill:hover .title{ 
+    opacity: 1;
+  }
+  .skill:hover .title2{ 
+    opacity: 1;
+  }
+
+  .skill:hover { 
+    opacity: 1;
+  }
+
+
+}
+
+
+}
+
+
+

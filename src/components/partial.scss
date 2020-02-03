@@ -1,0 +1,30 @@
+$primary-color: #7bc3d1;
+
+@mixin mobile-nav{
+  
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+
+}
+
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin translate-center{ 
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -80%);
+}

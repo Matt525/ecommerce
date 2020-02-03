@@ -1,0 +1,229 @@
+@import './partial.scss';
+
+.section-title { 
+  background: url('https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80');
+ @include center;
+ height: 40vh;
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ background-size: cover;
+
+  #projects-title { 
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    animation: slideRight 2s;
+    background: #0a0a0a98;
+    text-align: center!important;
+    font-weight: 600;
+    
+    
+  }
+
+}
+.card > .card-action { 
+  background: rgb(31, 31, 31); 
+
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color: #fff!important;
+}
+
+
+
+
+/* Tiles */
+
+	.tiles {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		border-top: 0 !important;
+	}
+
+		.tiles + * {
+			border-top: 0 !important;
+		}
+
+		.tiles article {
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
+			-webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
+			-ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
+			transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
+			padding: 4em 4em 2em 4em ;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			cursor: default;
+			height: 40vh;
+			max-height: 40em;
+			min-height: 23em;
+			overflow: hidden;
+			position: relative;
+			width: 50%;
+			color: white;
+		}
+
+
+			.tiles article header {
+				position: relative;
+				z-index: 3;
+			}
+
+			.tiles article h3 {
+				font-size: 1.75em;
+			}
+
+				.tiles article h3 a:hover {
+					color: inherit !important;
+				}
+
+			.tiles article .link.primary {
+				border: 0;
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				z-index: 4;
+			}
+
+			.tiles article:before {
+				-moz-transition: opacity 0.5s ease;
+				-webkit-transition: opacity 0.5s ease;
+				-ms-transition: opacity 0.5s ease;
+				transition: opacity 0.5s ease;
+				bottom: 0;
+				content: '';
+				display: block;
+				height: 100%;
+				left: 0;
+				opacity: 0.85;
+				position: absolute;
+				width: 100%;
+				z-index: 2;
+			}
+
+			.tiles article:after {
+				display: block;
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				z-index: 1;
+
+			}
+
+			// .tiles article:hover:before {
+			// 	opacity: 0;
+			// }
+
+			// .tiles article.is-transitioning {
+			// 	-moz-transform: scale(0.95);
+			// 	-webkit-transform: scale(0.95);
+			// 	-ms-transform: scale(0.95);
+			// 	transform: scale(0.95);
+			// 	-moz-filter: blur(0.5em);
+			// 	-webkit-filter: blur(0.5em);
+			// 	-ms-filter: blur(0.5em);
+			// 	filter: blur(0.5em);
+			// 	opacity: 0;
+			// }
+
+			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
+				width: 50%;
+			}
+
+			.tiles article:nth-child(6n - 5):before {
+				background: url("https://lh3.googleusercontent.com/proxy/I41qegwPhfAiVZEAyTRAVvpo6DdPYlqSl6sjyBJv9uJUvFVqf2UXy4DIYG4OrL_HiiF4AUqi");
+				background-size: cover;
+			}
+
+			.tiles article:nth-child(6n - 4):before {
+				background-color: #8d82c4;
+				background: url("https://codepen.io/jsjoeio/pen/WjvjaQ/image/large.png");
+				background-size: cover;
+			}
+
+			.tiles article:nth-child(6n - 3):before {
+				background-color: #ec8d81;
+				background: url("https://mdn.mozillademos.org/files/10383/mdn-breakout-gameplay.png");
+				background-size: cover;
+			}
+
+			.tiles article:nth-child(6n - 2):before {
+				background-color: #e7b788;
+				background: url("https://media1.tenor.com/images/14843e84b2e7a4b47e421fe77d3c2238/tenor.gif?itemid=15313580");
+				background-size: cover;
+				background-position: center;
+			}
+
+
+
+			
+		@media screen and (max-width: 1280px) {
+
+			.tiles article {
+				padding: 4em 3em 2em 3em ;
+				height: 30vh;
+				max-height: 30em;
+				min-height: 20em;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.tiles article {
+				width: 50% !important;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.tiles article {
+				padding: 3em 1.5em 1em 1.5em ;
+				height: 16em;
+				max-height: none;
+				min-height: 0;
+			}
+
+				.tiles article h3 {
+					font-size: 1.5em;
+				}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.tiles {
+				display: block;
+			}
+
+				.tiles article {
+					height: 20em;
+					width: 100% !important;
+				}
+
+		}
