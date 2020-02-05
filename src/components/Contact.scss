@@ -104,3 +104,72 @@ div label {
   }
   
 }
+
+@media(max-width: 896px){
+  .left-col { 
+    width: 50%;
+    height: 500px;
+    float: left;
+    border-right: solid 1px rgb(40, 52, 80);
+    color: #fff!important;
+  
+    form { 
+      margin-left: 20px;
+      margin-top: 15px;
+      width: 250px!important;
+      
+    
+    #name { 
+      background: rgb(45, 59, 92)!important;
+      width: 325px!important;
+      border-bottom: none!important;
+      padding-left: 10px;
+      color: #fff!important;
+      }
+    #email { 
+      background: rgb(45, 59, 92)!important;
+      width: 325px!important;
+      border-bottom: none!important;
+      padding-left: 10px;
+      color: #fff!important;
+      }
+  
+      .half{ 
+        display: inline-block;
+        margin-right: 25px;
+      }
+  
+      
+  div label {
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+    textarea { 
+      background: rgb(45, 59, 92)!important;
+      height: 150px;
+      border: none;
+      width: 325px;
+      padding-left: 20px;
+      padding-top: 20px;
+      color: #fff;
+      } 
+    }
+  }
+  
+  .right-col { 
+    padding: 0;
+    width: 50%;
+    margin-top: 14%;
+    color: #fff;
+    display: none;
+  .contact-method { 
+    
+
+    
+
+    
+  }
+}
+}

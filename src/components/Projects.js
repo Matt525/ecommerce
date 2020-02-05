@@ -12,6 +12,7 @@ class Projects extends Component {
         {/* <!-- One --> */}
         <section id="one" class="tiles">
           <article>
+            <div className="overlay"></div>
             <span class="image">
               <img src="" alt="" />
             </span>
@@ -19,18 +20,18 @@ class Projects extends Component {
             <header class="major">
               <h3>
                 <a
-                  href="patatap.html"
+                  href="https://matt525.github.io/patatapclone/"
                   class="link"
                   style={{ fontWeight: "800" }}
                 >
                   Patatap Clone
                 </a>
               </h3>
-              <p>
+              <p style={{ fontSize: "25px" }}>
                 Web application using javascript, and css to trigger audio
                 samples and animations upon the press of a key.
               </p>
-              <button class="btn blue" style={{ margin: "10px" }}>
+              <button class="btn blue" style={{ margin: "10px" }} href="https://matt525.github.io/patatapclone/">
                 Demo
               </button>
               <button class="btn">Code</button>
@@ -45,7 +46,7 @@ class Projects extends Component {
                 <a
                   href="landing.html"
                   class="link"
-                  style={{ fontWeight: "800", color: "#add8e6" }}
+                  style={{ fontWeight: "800"}}
                 >
                   RGB Color Game
                 </a>
@@ -53,10 +54,10 @@ class Projects extends Component {
               <p style={{ fontSize: "25px" }}>
                 Used vanilla JS to create a rgb color guessing game.
               </p>
-              <button class="btn blue" style={{ margin: "10px" }}>
+              <button class="btn blue btn-link" style={{ margin: "10px" }}>
                 Demo
               </button>
-              <button class="btn">Code</button>
+              <button class="btn btn-link">Code</button>
             </header>
           </article>
 
@@ -69,12 +70,12 @@ class Projects extends Component {
                 <a
                   href="landing.html"
                   class="link"
-                  style={{ color: "black", fontWeight: "800" }}
+                  style={{ fontWeight: "800" }}
                 >
                   B R E A K O U T
                 </a>
               </h3>
-              <p style={{ color: "black", fontSize: "25px" }}>
+              <p style={{ fontSize: "25px" }}>
                 Uses vanilla javascript to render and control breakout game
                 elements
               </p>
@@ -99,7 +100,7 @@ class Projects extends Component {
                   Weather Application
                 </a>
               </h3>
-              <p>
+              <p style={{ fontSize: "25px" }}>
                 Styled application using openWeather API to display current
                 weather data
               </p>

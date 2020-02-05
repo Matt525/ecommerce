@@ -111,3 +111,40 @@
 @keyframes widthExpand { 
 	to{width: 400px; }
 }
+
+.image{ 
+	display: none;
+}
+
+.info{ 
+
+display: flex;
+justify-content: center;
+padding: 5px;
+left: 20%;
+text-align: center;
+}
+
+#about > div.about-text > h1{ 
+	display: none;
+
+
+}	
+
+#about > div.about-text > p.subtitle{
+	margin-top: 50px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+#about > div.about-text > p.button > a{
+	width: 200px;
+	height: 40px;
+	background: transparent;
+	color: black;
+	border: solid black 2px;
+	font-family: Montserrat sans-serif;
+	left: 25%;
+	margin-bottom: 50px;
+}

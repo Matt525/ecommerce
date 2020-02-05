@@ -22,8 +22,6 @@
     background: #0a0a0a98;
     text-align: center!important;
     font-weight: 600;
-    
-    
   }
 
 }
@@ -134,28 +132,13 @@
 
 			}
 
-			// .tiles article:hover:before {
-			// 	opacity: 0;
-			// }
-
-			// .tiles article.is-transitioning {
-			// 	-moz-transform: scale(0.95);
-			// 	-webkit-transform: scale(0.95);
-			// 	-ms-transform: scale(0.95);
-			// 	transform: scale(0.95);
-			// 	-moz-filter: blur(0.5em);
-			// 	-webkit-filter: blur(0.5em);
-			// 	-ms-filter: blur(0.5em);
-			// 	filter: blur(0.5em);
-			// 	opacity: 0;
-			// }
 
 			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
 				width: 50%;
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background: url("https://lh3.googleusercontent.com/proxy/I41qegwPhfAiVZEAyTRAVvpo6DdPYlqSl6sjyBJv9uJUvFVqf2UXy4DIYG4OrL_HiiF4AUqi");
+				background: url("https://i.ytimg.com/vi/v3orh07cRPA/maxresdefault.jpg");
 				background-size: cover;
 			}
 
@@ -178,7 +161,12 @@
 				background-position: center;
 			}
 
-
+			.major{ 
+				top: 30%;
+				width: 100%;
+				background: rgba(51, 51, 51, 0.74);
+				padding: 20px;
+			}
 
 			
 		@media screen and (max-width: 1280px) {
@@ -189,6 +177,7 @@
 				max-height: 30em;
 				min-height: 20em;
 			}
+			
 
 		}
 
@@ -197,21 +186,43 @@
 			.tiles article {
 				width: 50% !important;
 			}
+			
+			#projects-title{ 
+				background-color: #111;
+				color: #fff;
+				padding: 18px;
+				font-size: 40px!important;
+				letter-spacing: 5px!important;
+				margin-bottom: 10px;
+				animation: slideRight 2s;
+				background: #0a0a0a98;
+				text-align: center!important;
+				font-weight: 600;
+			  }
+			  
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media(max-width: 736px) {
 
 			.tiles article {
 				padding: 3em 1.5em 1em 1.5em ;
 				height: 16em;
 				max-height: none;
 				min-height: 0;
+				
 			}
 
 				.tiles article h3 {
 					font-size: 1.5em;
 				}
+				.major{ 
+					
+					width: 100%;
+					background: rgba(51, 51, 51, 0.74);
+					padding: 20px;
+				}
+	
 
 		}
 
@@ -225,5 +236,15 @@
 					height: 20em;
 					width: 100% !important;
 				}
+
+		}
+
+		@media(max-width: 896px){
+			.major{ 
+				
+				width: 100%;
+				background: rgba(51, 51, 51, 0.74);
+				padding: 20px;
+			}
 
 		}
