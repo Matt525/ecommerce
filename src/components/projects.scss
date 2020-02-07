@@ -35,7 +35,6 @@
 
 
 
-
 /* Tiles */
 
 	.tiles {
@@ -247,4 +246,16 @@
 				padding: 20px;
 			}
 
+		}
+		#root > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(1){
+			
+		width: 25%;
+		}
+		#root > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(2){
+
+		width: 25%;
+		}
+		#root > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3){
+
+		width: 25%;
 		}
