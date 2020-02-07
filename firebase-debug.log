@@ -1,0 +1,152 @@
+[debug] [2020-02-07T18:14:31.417Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T18:14:31.418Z] Command:       C:\node.exe C:\Users\malan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-02-07T18:14:31.419Z] CLI Version:   7.12.1
+[debug] [2020-02-07T18:14:31.419Z] Platform:      win32
+[debug] [2020-02-07T18:14:31.419Z] Node Version:  v10.16.0
+[debug] [2020-02-07T18:14:31.419Z] Time:          Fri Feb 07 2020 13:14:31 GMT-0500 (Eastern Standard Time)
+[debug] [2020-02-07T18:14:31.419Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T18:14:31.419Z] 
+[debug] [2020-02-07T18:14:31.426Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-07T18:14:31.426Z] > authorizing via signed-in user
+[debug] [2020-02-07T18:14:31.426Z] [iam] checking project matthew-staton-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-07T18:14:31.427Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/matthew-staton-portfolio:testIamPermissions  
+
+[debug] [2020-02-07T18:14:31.871Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-07T18:14:31.872Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/matthew-staton-portfolio  
+ 
+[debug] [2020-02-07T18:14:32.265Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'matthew-staton-portfolio'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-02-07T18:14:32.275Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/matthew-staton-portfolio/versions  
+
+[debug] [2020-02-07T18:14:42.605Z] <<< HTTP RESPONSE 503
+[debug] [2020-02-07T18:14:42.605Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 503, The service is currently unavailable.
+[debug] [2020-02-07T18:14:42.887Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 503,
+      "message": "The service is currently unavailable.",
+      "status": "UNAVAILABLE"
+    }
+  },
+  "response": {
+    "statusCode": 503,
+    "body": {
+      "error": {
+        "code": 503,
+        "message": "The service is currently unavailable.",
+        "status": "UNAVAILABLE"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Fri, 07 Feb 2020 18:14:43 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/matthew-staton-portfolio/versions",
+        "path": "/v1beta1/sites/matthew-staton-portfolio/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/matthew-staton-portfolio/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2020-02-07T18:15:29.606Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T18:15:29.608Z] Command:       C:\node.exe C:\Users\malan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-02-07T18:15:29.608Z] CLI Version:   7.12.1
+[debug] [2020-02-07T18:15:29.608Z] Platform:      win32
+[debug] [2020-02-07T18:15:29.608Z] Node Version:  v10.16.0
+[debug] [2020-02-07T18:15:29.609Z] Time:          Fri Feb 07 2020 13:15:29 GMT-0500 (Eastern Standard Time)
+[debug] [2020-02-07T18:15:29.609Z] ----------------------------------------------------------------------
+[debug] [2020-02-07T18:15:29.609Z] 
+[debug] [2020-02-07T18:15:29.615Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-07T18:15:29.615Z] > authorizing via signed-in user
+[debug] [2020-02-07T18:15:29.615Z] [iam] checking project matthew-staton-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-07T18:15:29.616Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/matthew-staton-portfolio:testIamPermissions  
+
+[debug] [2020-02-07T18:15:29.998Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-07T18:15:29.999Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/matthew-staton-portfolio  
+ 
+[debug] [2020-02-07T18:15:30.473Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'matthew-staton-portfolio'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-02-07T18:15:30.482Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/matthew-staton-portfolio/versions  
+
+[debug] [2020-02-07T18:15:40.766Z] <<< HTTP RESPONSE 503
+[debug] [2020-02-07T18:15:40.766Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 503, The service is currently unavailable.
+[debug] [2020-02-07T18:15:41.050Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 503,
+      "message": "The service is currently unavailable.",
+      "status": "UNAVAILABLE"
+    }
+  },
+  "response": {
+    "statusCode": 503,
+    "body": {
+      "error": {
+        "code": 503,
+        "message": "The service is currently unavailable.",
+        "status": "UNAVAILABLE"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Fri, 07 Feb 2020 18:15:41 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/matthew-staton-portfolio/versions",
+        "path": "/v1beta1/sites/matthew-staton-portfolio/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/matthew-staton-portfolio/versions"
+      },
+      "method": "POST"
+    }
+  }
+}

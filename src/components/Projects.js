@@ -1,9 +1,13 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom';
 import "./projects.scss";
 import {
   Card, Button, CardImg, CardTitle, CardText, CardDeck,
   CardSubtitle, CardBody, Container, Row, Col
 } from 'reactstrap';
+
+    const patatap = 'https://matt525.github.io/patatap.io'
+  
 
 
 
@@ -27,7 +31,7 @@ class Projects extends Component {
       <Card height="100%">
         <CardImg top width="100%" src="https://i.ytimg.com/vi/v3orh07cRPA/maxresdefault.jpg" alt="Card image cap" />
         <CardBody style={{padding: '20px'}}>
-          <CardTitle>Card title</CardTitle>
+          <CardTitle>Patatap Clone</CardTitle>
           <CardSubtitle>Card subtitle</CardSubtitle>
           <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
           <Button>Demo</Button>
@@ -39,11 +43,11 @@ class Projects extends Component {
       <Card>
         <CardImg top width="100%" src="https://codepen.io/jsjoeio/pen/WjvjaQ/image/large.png" alt="Card image cap" />
         <CardBody style={{padding: '20px'}}>
-          <CardTitle>Card title</CardTitle>
+          <CardTitle>RGB Color Game</CardTitle>
           <CardSubtitle>Card subtitle</CardSubtitle>
           <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
-          <Button>Demo</Button>
-          <Button>Code</Button>
+          <Button tag={Link} to="https://matt525.github.io/RGBColorGame/">Demo</Button>
+          <Button tag={Link} to="https://github.com/Matt525/RGBColorGame">Code</Button>
         </CardBody>
       </Card>
       </Col>
@@ -51,7 +55,7 @@ class Projects extends Component {
       <Card>
         <CardImg top height="295px" width="100%" src="https://mdn.mozillademos.org/files/10383/mdn-breakout-gameplay.png" alt="Card image cap" />
         <CardBody style={{padding: '20px'}}>
-          <CardTitle>Card title</CardTitle>
+          <CardTitle>Breakout Game</CardTitle>
           <CardSubtitle>Card subtitle</CardSubtitle>
           <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
           <Button className="blue">Demo</Button>
