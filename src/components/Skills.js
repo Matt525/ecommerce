@@ -155,8 +155,7 @@ class Skills extends React.Component {
             <div className="title2" style={{ padding: "10px" }}>
               <h1>Advanced</h1>
               <p>
-                Understanding of core routing, error handling, and setting up a
-                local server.
+                Understanding of installing packages and dependencies, committing and pushing to remote repo.
               </p>
               <div
                 class="w3-container w3-round w3-blue"

@@ -7,13 +7,12 @@ import {
 
 
 
-
-
 class Projects extends Component {
   render() {
+    
+    
     return (
 
-      
       <div>
         <div className="section-title">
           <h1 id="projects-title">P R O J E C T S</h1>
@@ -22,8 +21,8 @@ class Projects extends Component {
         {/* <!-- One --> */}
       
       
-      <CardDeck style={{background: '#222', margin: '20px'}}>
-        <Row>
+      <CardDeck style={{background: '#444', height: '100%', padding: '0px', margin: '0px'}}>
+        <Row display="flex" justify-content="center" style={{margin: '0px', paddingTop: '20px', }}>
           <Col>
       <Card height="100%">
         <CardImg top width="100%" src="https://i.ytimg.com/vi/v3orh07cRPA/maxresdefault.jpg" alt="Card image cap" />
@@ -50,7 +49,7 @@ class Projects extends Component {
       </Col>
       <Col>
       <Card>
-        <CardImg top width="100%" src="https://mdn.mozillademos.org/files/10383/mdn-breakout-gameplay.png" alt="Card image cap" />
+        <CardImg top height="295px" width="100%" src="https://mdn.mozillademos.org/files/10383/mdn-breakout-gameplay.png" alt="Card image cap" />
         <CardBody style={{padding: '20px'}}>
           <CardTitle>Card title</CardTitle>
           <CardSubtitle>Card subtitle</CardSubtitle>
@@ -62,7 +61,7 @@ class Projects extends Component {
       </Col>
       <Col>
       <Card style={{width: '600px'}}>
-        <CardImg top width="100%"src="https://mdn.mozillademos.org/files/10383/mdn-breakout-gameplay.png" alt="Card image cap" />
+        <CardImg top height="290px" width="100%"src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/weather-app-796x419.png" alt="Card image cap" />
         <CardBody style={{padding: '20px'}}>
           <CardTitle>Weather Application</CardTitle>
           <CardSubtitle>Weather application that pulls from openweather api.</CardSubtitle>
