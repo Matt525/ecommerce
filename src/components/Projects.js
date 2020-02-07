@@ -6,7 +6,6 @@ import {
   CardSubtitle, CardBody, Container, Row, Col
 } from 'reactstrap';
 
-    const patatap = 'https://matt525.github.io/patatap.io'
   
 
 
@@ -46,7 +45,7 @@ class Projects extends Component {
           <CardTitle>RGB Color Game</CardTitle>
           <CardSubtitle>Card subtitle</CardSubtitle>
           <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
-          <Button onClick= "window.location.href = 'https://matt525.github.io/RGBColorGame/'">Demo</Button>
+          <Button onClick={window.location.href = "https://matt525.github.io/RGBColorGame/"}>Demo</Button>
           <Button tag={Link} to="https://github.com/Matt525/RGBColorGame">Code</Button>
         </CardBody>
       </Card>
