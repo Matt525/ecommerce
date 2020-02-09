@@ -73,10 +73,10 @@ class Projects extends Component {
         <CardImg top height="290px" width="100%"src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/weather-app-796x419.png" alt="Card image cap" />
         <CardBody style={{padding: '20px'}}>
           <CardTitle>Weather Application</CardTitle>
-          <CardSubtitle>Weather application that pulls from openweather api.</CardSubtitle>
+          <CardSubtitle>Weather application that shows your current locations weather using darkSky api.</CardSubtitle>
           <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-          <Button className="blue">Demo</Button>
-          <Button className="blue" style={{margin: "10px"}}>Code</Button>
+          <Button><a style={{color: 'white'}} href="https://musing-morse-5eaa60.netlify.com">Demo</a></Button>
+          <Button><a style={{color: 'white'}} href="https://github.com/Matt525/weather_application">Code</a></Button>
         </CardBody>
       </Card>
       </Col>
