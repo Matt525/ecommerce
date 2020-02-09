@@ -29,12 +29,12 @@ class Projects extends Component {
           <Col>
           {/* Patatap Clone */}
       <Card height="100%">
-        <CardImg top height="335px" width="100%" src="https://i.ytimg.com/vi/v3orh07cRPA/maxresdefault.jpg" alt="Card image cap" />
+        <CardImg top height="340px" width="100%" src="https://i.ytimg.com/vi/v3orh07cRPA/maxresdefault.jpg" alt="Card image cap" />
         <CardBody style={{padding: '20px'}}>
           <CardTitle>Patatap Clone</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-          <Button><a style={{color: 'white'}} href="https://suspicious-heyrovsky-63d4b0.netlify.com">Demo</a></Button>
+          <CardSubtitle>Press keys and trigger animation/sound </CardSubtitle>
+          <CardText>This is a clone of the Patatap.com web app that utilitzes vanilla JS, paperJS and howlerJS to bring you a fun interactive web application.</CardText>
+          <Button style={{margin: '10px'}}><a style={{color: 'white'}} href="https://suspicious-heyrovsky-63d4b0.netlify.com">Demo</a></Button>
           <Button><a style={{color: 'white'}} href="https://github.com/Matt525/patatapclone">Code</a></Button>
         </CardBody>
       </Card>
@@ -45,9 +45,9 @@ class Projects extends Component {
         <CardImg top width="100%" src="https://codepen.io/jsjoeio/pen/WjvjaQ/image/large.png" alt="Card image cap" />
         <CardBody style={{padding: '20px'}}>
           <CardTitle>RGB Color Game</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
-          <Button><a style={{color: 'white'}} href="https://matt525.github.io/RGBColorGame/">Demo</a></Button>
+          <CardSubtitle>Guess the color by the RGB code.</CardSubtitle>
+          <CardText>RGB color game utilizing vanilla JS and CSS styling.</CardText>
+          <Button style={{margin: '10px'}}><a style={{color: 'white'}} href="https://matt525.github.io/RGBColorGame/">Demo</a></Button>
           <Button><a style={{color: 'white'}} href="https://github.com/Matt525/RGBColorGame">Code</a></Button>
         </CardBody>
       </Card>
@@ -57,12 +57,12 @@ class Projects extends Component {
         {/* Breakout Project */}
 
       <Card>
-        <CardImg top height="310px" width="100%" src="https://mdn.mozillademos.org/files/10383/mdn-breakout-gameplay.png" alt="Card image cap" />
+        <CardImg top height="360px" width="100%" src="https://mdn.mozillademos.org/files/10383/mdn-breakout-gameplay.png" alt="Card image cap" />
         <CardBody style={{padding: '20px'}}>
           <CardTitle>Breakout Game</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-          <Button><a style={{color: 'white'}} href="https://pensive-mccarthy-649681.netlify.com">Demo</a></Button>
+          <CardSubtitle>Breakout Vanilla JS</CardSubtitle>
+          <CardText>This project is the game 'breakout' built completed via vanilla JavaScript.</CardText>
+          <Button style={{margin: '10px'}}><a style={{color: 'white'}} href="https://pensive-mccarthy-649681.netlify.com">Demo</a></Button>
           <Button><a style={{color: 'white'}} href="https://github.com/Matt525/BreakOut">Code</a></Button>
         </CardBody>
       </Card>
@@ -71,12 +71,12 @@ class Projects extends Component {
 
       {/* Weather Application project */}
       <Card style={{width: '600px'}}>
-        <CardImg top height="310px" width="100%"src={weather_image} alt="Card image cap" />
+        <CardImg top height="360px" width="100%"src={weather_image} alt="Card image cap" />
         <CardBody style={{padding: '20px'}}>
           <CardTitle>Weather Application</CardTitle>
-          <CardSubtitle>Weather application that shows your current locations weather using darkSky api.</CardSubtitle>
-          <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-          <Button><a style={{color: 'white'}} href="https://musing-morse-5eaa60.netlify.com">Demo</a></Button>
+          <CardSubtitle>Local weather application with implemented API</CardSubtitle>
+          <CardText>Weather application that shows your current locations weather using darkSky api.</CardText>
+          <Button style={{margin: '10px'}}><a style={{color: 'white'}} href="https://musing-morse-5eaa60.netlify.com">Demo</a></Button>
           <Button><a style={{color: 'white'}} href="https://github.com/Matt525/weather_application">Code</a></Button>
         </CardBody>
       </Card>
