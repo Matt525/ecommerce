@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./projects.scss";
+import weather_image from './photo_source/weather_appplication_pic.png'
 import {
   Card, Button, CardImg, CardTitle, CardText, CardDeck,
   CardSubtitle, CardBody, Container, Row, Col
@@ -28,7 +29,7 @@ class Projects extends Component {
           <Col>
           {/* Patatap Clone */}
       <Card height="100%">
-        <CardImg top width="100%" src="https://i.ytimg.com/vi/v3orh07cRPA/maxresdefault.jpg" alt="Card image cap" />
+        <CardImg top height="335px" width="100%" src="https://i.ytimg.com/vi/v3orh07cRPA/maxresdefault.jpg" alt="Card image cap" />
         <CardBody style={{padding: '20px'}}>
           <CardTitle>Patatap Clone</CardTitle>
           <CardSubtitle>Card subtitle</CardSubtitle>
@@ -56,7 +57,7 @@ class Projects extends Component {
         {/* Breakout Project */}
 
       <Card>
-        <CardImg top height="295px" width="100%" src="https://mdn.mozillademos.org/files/10383/mdn-breakout-gameplay.png" alt="Card image cap" />
+        <CardImg top height="310px" width="100%" src="https://mdn.mozillademos.org/files/10383/mdn-breakout-gameplay.png" alt="Card image cap" />
         <CardBody style={{padding: '20px'}}>
           <CardTitle>Breakout Game</CardTitle>
           <CardSubtitle>Card subtitle</CardSubtitle>
@@ -70,7 +71,7 @@ class Projects extends Component {
 
       {/* Weather Application project */}
       <Card style={{width: '600px'}}>
-        <CardImg top height="290px" width="100%"src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/weather-app-796x419.png" alt="Card image cap" />
+        <CardImg top height="310px" width="100%"src={weather_image} alt="Card image cap" />
         <CardBody style={{padding: '20px'}}>
           <CardTitle>Weather Application</CardTitle>
           <CardSubtitle>Weather application that shows your current locations weather using darkSky api.</CardSubtitle>
