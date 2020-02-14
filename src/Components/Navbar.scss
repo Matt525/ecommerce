@@ -1,0 +1,11 @@
+
+@import './Partial';
+
+.navbar { 
+    background-color: $dark-blue!important;
+    .navbar-brand{ 
+      margin-left: 20%;
+      font-size: 25px;
+      color: #fff!important;
+    }
+  }
