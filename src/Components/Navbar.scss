@@ -2,10 +2,36 @@
 @import './Partial';
 
 .navbar { 
-    background-color: $dark-blue!important;
+    background-color: $blue!important;
+    height: 75px;
+    width: 100%;
     .navbar-brand{ 
       margin-left: 20%;
       font-size: 25px;
       color: #fff!important;
+      position: fixed!important;
+      top: 0!important;
+      width: 100%!important;
     }
-  }
+
+    .search{ 
+      width: 1050px!important;
+      margin-right: 0%!important;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+
+    .signin{ 
+      color: #fff!important;
+      position: relative;
+      left: 2%;
+      display: inline;
+    }
+
+    .s-link{ 
+        color: #fff!important;
+    }
+      
+
+  }    

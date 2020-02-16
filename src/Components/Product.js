@@ -1,16 +1,74 @@
 import React from 'react'; 
+import './Product.scss';
+import {Link} from 'react-router-dom';
+import {productConsumer} from '../context';
+import PropTypes from 'prop-types'; 
 
-class Product extends React.Component{ 
+
+export default class Product extends React.Component{ 
+
     render(){
+
+        // Pulling from Data.js
+        const {id, title, img, price, inCart} = this.props.value;
+    
         return(
-            <div>
-                
+            
+            <div class="col-md-4">
+                <figure class="card card-product">
 
-                
+                    {/* Image Topper */}
+                            <div class="img-wrap"><img src={img} onClick={()=>{console.log("Image product clicked")}} /></div>
+
+                            {/* Info Container */}
+                            <figcaption class="info-wrap">
+                                    <h4 class="title">{title}</h4>
+                                    <p class="desc">Description of the item usually is populated here.</p>
+                                    <div class="rating-wrap">
+                                        <div class="label-rating">132 reviews</div>
+                                        <div class="label-rating">154 orders </div>
+                                    </div> 
+                            </figcaption>
+
+
+
+                            {/* Bottom container */}
+                            <div class="bottom-wrap">
+                                
+                                {/* Button */}
+
+                                <a href="" class="btn btn-sm btn-primary float-right" disables={inCart?true : false} onClick={(event)=>{
+                                    event.preventDefault(); console.log("Added To Cart");}}>
+                                    {inCart?(<a className="in-cart-message" disabled>Item In Cart</a>):(<a href="" class="btn btn-sm btn-primary float-right" disabled>Add To Cart</a>)}
+                                </a>
+                                
+                                {/* Pricing */}
+                                    
+                                <div class="price-wrap h5">
+                                <span class="price-new">${price}</span> <del class="price-old">$1094</del>
+                                </div>
+                            </div> 
+                </figure>
             </div>
-        )
-    }
-}
+                    
+                    )
+
+                
+                
+                }
+                
+
+        
+        }
 
 
-export default Product; 
+        Product.propTypes = {
+            product:PropTypes.shape({
+                id:PropTypes.number,
+                img:PropTypes.string,
+                title:PropTypes.string,
+                price:PropTypes.number,
+                inCart:PropTypes.bool
+            }).isRequired
+        };
+ 

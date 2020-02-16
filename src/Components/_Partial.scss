@@ -1,1 +1,17 @@
 $dark-blue: #282e47;
+$mainBlue:#2a2A33;
+$blue: #3167eb;
+$light-blue: #009ffd;
+$mainWhite: #fff;
+$mainDark: #222;
+$darkBlue: #282e47;
+$mainYellow: yellow;
+
+
+@mixin clearfix {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }

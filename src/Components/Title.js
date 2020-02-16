@@ -12,10 +12,13 @@ export default ({name, title}) => {
                                     <h1 className="text-capitalized">{name}
                                                     &nbsp;
                                         <strong className='text-blue'>{title}</strong>
+                                        
                                     </h1>
+                                    
                         </div>
+                        
                     </div>
-
+                   
         
             </div>
         )

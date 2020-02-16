@@ -4,6 +4,9 @@ const ProductContext = React.createContext();
 
 class ProductProvider extends React.Component {
     
+
+    // Pulling state from data.js and assigning to pass on to other components
+
     state = {
         products: storeProducts,
         detailProduct: detailProduct
@@ -16,13 +19,16 @@ class ProductProvider extends React.Component {
             console.log("cart handle")
         }
 
+
     render(){
             return (
                     <ProductContext.Provider value={{...this.state,
                     handleDetail: this.handleDetail,
                     addToCart: this.addToCart
                     }}>
+                    
                         {this.props.children}
+                       
                     </ProductContext.Provider>
                 )
         }

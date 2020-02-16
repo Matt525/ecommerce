@@ -5,20 +5,22 @@
   --mainDark: #222;
   --darkBlue: #282e47;
   --mainYellow: yellow; 
-  
 }
 
 html{
   height: 100vh!important;
   width: 100vw!important;
+  
+
 }
 
 body {
-    margin: 0;
+    
+    margin: 0!important;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    background: var(--mainWhite)!important;
+    background: rgb(243, 243, 243);
     color: var(--mainDark); 
     height: 100vh;
     width: 100vw;
