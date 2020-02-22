@@ -13,12 +13,14 @@ class ProductProvider extends React.Component {
             console.log("Detail handle")
         }
         addToCart = ()=>{
-            console.log("cart handle")
+            console.log("cart handle"); 
         }
 
     render(){
+
             return (
                     <ProductContext.Provider value={{...this.state,
+                        // Declaring perameters of value. 
                     handleDetail: this.handleDetail,
                     addToCart: this.addToCart
                     }}>
