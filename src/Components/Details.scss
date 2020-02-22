@@ -1,0 +1,26 @@
+@import './Partial';
+#root > div.container.d-flex.justify-content-center.align-items-center{ 
+    height: 100vh!important;
+                }
+.row{ 
+    height: 50vh!important;
+    width: 100vw;
+}
+
+.image { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-banner{ 
+    height: 200px!important;
+    background: #ddd;
+    @include center;
+
+    .banner-text{ 
+        font-size: 75px!important;
+        letter-spacing: 1rem;
+    }
+}
+

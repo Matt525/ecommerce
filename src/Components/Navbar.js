@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.scss';
-import logo from './ecommerce_icon.png';
+import logo from './Photo_source/ecommerce_icon.png';
 import {Link, Router} from 'react-router-dom';
 
 function App() {
@@ -14,18 +14,38 @@ function App() {
             {/*Navbar*/}
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <Link to="/">
-        <img src={logo} class="d-flex nav-link" alt="" style={{height: '80px', width: '100px', marginLeft: '400%', }}/>
+          {/* Card Image */}
+        <img src={logo} class="d-flex nav-link" alt="" style={{height: '100px', width: '120px', marginLeft: '400%', }}/>
           </Link>
-              <form class="form-inline" style={{marginLeft: '65%'}}>
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                  <button class="btn btn-outline-primary my-2 my-sm-0 " type="submit">Search</button>
+                  {/* Search Bar & Button */}
+              <form class="form-inline" style={{marginLeft: '23.5%', marginRight: '50px'}}>
+                  <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search" />
+                  <button class="btn btn-danger my-sm-0" type="submit"><i class="fas fa-search-location"></i></button>
               </form>
+              {/* Shopping Cart */}
               <Link to='/cart'>
-                    <i style={shoppingCart} class=" nav-link fas fa-2x fa-shopping-cart" />
+                    <i style={shoppingCart} class="fas fa-2x fa-shopping-cart" />
               </Link>
+          
+              
+              <div class="text signin">
+                <div class="signin">
+                    <Link to="/signin">
+                      <a href="#" className="s-link">Sign in</a> |  
+                      </Link>
+                    <Link>
+                      <a href="#" className="s-link"> Register</a>
+                    </Link>
+                    
+                  </div>
+				      </div>
+              
 
       </nav>
     </div>
+
+
+
     
   );
 }
