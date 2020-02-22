@@ -73,6 +73,7 @@ class ProductProvider extends React.Component {
         // ADD TO CART FUNCTION
 
         addToCart = (id)=>{
+
                 let tempProducts = [...this.state.products]; 
                 let index = tempProducts.indexOf(this.getItem(id));
                 const product = tempProducts[index]; 
@@ -91,12 +92,20 @@ class ProductProvider extends React.Component {
         }
 
         showModal=()=>{
-            this.setState({show: true}); 
+            // Retrieving specific item ID via getItem function above in code.
+            const product = this.getItem(id);
+            // Changing values within state upon call
+            this.setState(()=>{
+                return{show:false, modalProduct: product}
+            });
             
         }
 
         hideModal=()=>{
-            this.setState({show: false}); 
+            this.setState(()=>{
+                return{show:false,}
+            });
+            
 
         }
 
