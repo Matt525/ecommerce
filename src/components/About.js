@@ -11,7 +11,7 @@ class About extends React.Component {
           <h1>Matt Staton</h1>
           {/* <div id="line" /> */}
           <p className="subtitle">
-            Front-End Web Developer From Michigan.
+            Front-End Web Developer From James Island, SC.
           </p>
           <p class="info">
           Adaptable professional with proof of knowledge of front-end web development, and problem solving skills. Aiming to leverage my skills to successfully 

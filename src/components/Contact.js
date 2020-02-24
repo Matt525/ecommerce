@@ -129,9 +129,9 @@ class Contact extends React.Component {
                 />
                 <h3>Address</h3>
                 <span>
-                  1524 Kemper Avenue
+                  847 Sumpter Road
                   <br />
-                  James Island, SC 29412
+                  Belleville, MI 48111
                   <br />
                   United States of America
                 </span>

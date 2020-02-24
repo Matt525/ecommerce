@@ -11,7 +11,7 @@ class Projects extends Component {
   constructor(props){
     super(props);
     this.state = { 
-    }
+    }     
   }
   render() {    
     return (
@@ -22,6 +22,7 @@ class Projects extends Component {
         </div>
 
         {/* <!-- One --> */}
+      
       
       
       <CardDeck style={{background: '#444', height: '100%', padding: '0px', margin: '0px'}}>
@@ -83,6 +84,7 @@ class Projects extends Component {
       </Col>
       </Row>
     </CardDeck>
+    
     
     </div>
       
