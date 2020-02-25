@@ -31,7 +31,7 @@ export default class Modal extends React.Component {
                             <h4 class="title">Item has been added to the cart!</h4>
                             <img src={img} alt="product image"></img>
                             <h4>{title}</h4>
-                            <h6>{Price}</h6>
+                            <h6>{price}</h6>
                             <p>{info}</p>
                             <Link to="/">
                             <button className="btn btn-primary">Continue Shopping</button>

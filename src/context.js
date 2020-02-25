@@ -12,11 +12,7 @@ class ProductProvider extends React.Component {
             detailProduct: detailProduct,
             cart: [],
             show: true,
-            modalProduct: detailProduct
-
-
-
-            
+            modalProduct: detailProduct 
     }
 
     // upon component mount, running setProducts function
@@ -24,9 +20,6 @@ class ProductProvider extends React.Component {
     componentDidMount(){
             this.setProducts();
     }
-
-
-    
 
     setProducts = ()=>{
             let tempProducts = []
@@ -43,8 +36,6 @@ class ProductProvider extends React.Component {
                 })
 
     }
-
-
                             // Pulling item by id 
 
                         getItem = (id)=>{
@@ -69,7 +60,6 @@ class ProductProvider extends React.Component {
                             })
                         }
 
-
         // ADD TO CART FUNCTION
 
         addToCart = (id)=>{
@@ -81,14 +71,12 @@ class ProductProvider extends React.Component {
                 product.count = 1;
                 const price = product.price;
                 product.total = price; 
-
                     this.setState(()=>{
-                        return {products:tempProducts, cart: [...this.state.cart, product]}
-                                            
+                        return {products:tempProducts, cart: [...this.state.cart, product]}     
                 }, ()=>{
                     console.log(this.state); 
                 })
-            
+
         }
 
         showModal=()=>{
@@ -100,10 +88,6 @@ class ProductProvider extends React.Component {
             });
             
         }
-<<<<<<< HEAD
-        addToCart = ()=>{
-            console.log("cart handle"); 
-=======
 
         hideModal=()=>{
             this.setState(()=>{
@@ -111,7 +95,6 @@ class ProductProvider extends React.Component {
             });
             
 
->>>>>>> 3b2a0be6e9fb4e579eb54b5931f0099c91e6c7c4
         }
 
     
@@ -128,11 +111,6 @@ class ProductProvider extends React.Component {
             return (
                 // Passing state and variables through to be used on product component
                     <ProductContext.Provider value={{...this.state,
-<<<<<<< HEAD
-                        // Declaring perameters of value. 
-=======
-                        
->>>>>>> 3b2a0be6e9fb4e579eb54b5931f0099c91e6c7c4
                     handleDetail: this.handleDetail,
                     addToCart: this.addToCart,
                     hideModal: this.hideModal,
