@@ -1,5 +1,9 @@
-import React from 'react'
-import {storeProducts, detailProduct} from './data'; 
+import React from 'react';
+import {storeProducts, detailProduct} from './data';
+
+
+
+
 const ProductContext = React.createContext(); 
 
 class ProductProvider extends React.Component {
@@ -11,12 +15,11 @@ class ProductProvider extends React.Component {
             products: [],
             detailProduct: detailProduct,
             cart: [],
-            show: true,
-            modalProduct: detailProduct
-
-
-
-            
+            modalOpen: false,
+            modalProduct: detailProduct,
+            cartSubtotal: 0,
+            cartTotal: 0,
+            cartTax: 0,
     }
 
     // upon component mount, running setProducts function
@@ -26,7 +29,8 @@ class ProductProvider extends React.Component {
     }
 
 
-    
+
+    // Iterating through storeProducts via forEach to pull individual items and push them to another defined array.
 
     setProducts = ()=>{
             let tempProducts = []
@@ -48,10 +52,9 @@ class ProductProvider extends React.Component {
                             // Pulling item by id 
 
                         getItem = (id)=>{
-                            // Finding particular product through find
+                            // Finding particular product through find. Item.id equal to id passed into argument.
                             const product = this.state.products.find(item=> item.id === id);
                             return product;
-                            
                         }
 
 
@@ -85,51 +88,60 @@ class ProductProvider extends React.Component {
                     this.setState(()=>{
                         return {products:tempProducts, cart: [...this.state.cart, product]}
                                             
-                }, ()=>{
-                    console.log(this.state); 
                 })
-            
-        }
+        };
 
-        showModal=()=>{
+
+
+        openModal = id =>{
             // Retrieving specific item ID via getItem function above in code.
             const product = this.getItem(id);
             // Changing values within state upon call
             this.setState(()=>{
-                return{show:false, modalProduct: product}
+                return{modalProduct: product, modalOpen:true}
             });
-            
         }
 
-        hideModal=()=>{
+        closeModal = () =>{
             this.setState(()=>{
-                return{show:false,}
+                return {modalOpen:false};
             });
-            
-
         }
 
-    
+        // Cart Functions below
 
-
-
-
-        
-
-
+        increment = (id) =>{
+            console.log("this is the increment function"); 
+        }
+        decrement = (id) =>{
+            
+            console.log("this is the increment function"); 
+        }
+        removeItem = (id) =>{
+            // Remove last element added to array
+            console.log("this is the increment function"); 
+        }
+        clearCart = () =>{ 
+            // Remove elements from cart
+            
+        }
 
     render(){
             return (
                 // Passing state and variables through to be used on product component
-                    <ProductContext.Provider value={{...this.state,
+                    <ProductContext.Provider value={{...this.state, 
                         
-                    handleDetail: this.handleDetail,
-                    addToCart: this.addToCart,
-                    hideModal: this.hideModal,
-                    showModal: this.showModal
-                    }}>
-                    
-                        {this.props.children}
+                            handleDetail: this.handleDetail,
+                            addToCart: this.addToCart,
+                            openModal: this.openModal,
+                            closeModal: this.closeModal,
+                            increment: this.increment,
+                            decrement: this.decrement,
+                            removeItem: this.removeItem,
+                            clearCart: this.clearCart
+                            }}>
+                                
+                            {this.props.children}
                        
                     </ProductContext.Provider>
                 )

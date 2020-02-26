@@ -1,29 +1,18 @@
-import React, { Component } from 'react'
-import './index.css'
+import React from 'react'
+import CartColumns from './Cart/CartColumns'
+ 
+export default class Title extends React.Component {
+    render(){
 
-export default ({name, title}) => {
         return (
-
-            <div>
-
-                    <div className="row">
-                        <div className="col-10.mx-auto.my-2.text-center.text-title"> 
-
-                                    <h1 className="text-capitalized">{name}
-                                                    &nbsp;
-                                        <strong className='text-blue'>{title}</strong>
-                                        
-                                    </h1>
-                                    
-                        </div>
-                        
-                    </div>
-                   
-        
-            </div>
+            <section className="text-center mt-5">
+                <CartColumns />
+            </section>
         )
-}
 
+    }
+    
+}
 
 
 

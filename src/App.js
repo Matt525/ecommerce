@@ -1,12 +1,14 @@
 import React from 'react';
 import Navbar from './Components/Navbar';
 import Details from './Components/Details'; 
-import Cart from './Components/Cart'; 
+import Cart from './Components/Cart';
 import Default from './Components/Default'; 
 import ProductList from './Components/ProductList';
 import Modal from './Components/Modal'; 
 import {Switch, Route} from 'react-router-dom'; 
+
 import './Components/index.css';
+
 // Importing bootstrap VVVV
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -23,7 +25,7 @@ class App extends React.Component {
                 <Route path="/cart" component={Cart} />
                 <Route component={Default} />
               </Switch>
-              {/* <Modal /> */}
+              <Modal />
     </React.Fragment>
     );
   }
