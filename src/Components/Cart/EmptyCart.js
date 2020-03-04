@@ -5,7 +5,7 @@ export default class EmptyCart extends Component {
         return (
 
                 <div className="container mt-5">
-                    <div className="row">
+                    <div className="row w-100">
                         <div className="col-10 mx-auto text-center">
                             <h1>Your Cart Is Empty</h1>
                         </div>

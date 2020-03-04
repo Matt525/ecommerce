@@ -15,11 +15,12 @@ class ProductProvider extends React.Component {
             products: [],
             detailProduct: detailProduct,
             cart: [],
-            modalOpen: false,
+            modalOpen: false, 
             modalProduct: detailProduct,
-            cartSubtotal: 0,
-            cartTotal: 0,
             cartTax: 0,
+            cartSubtotal:0,
+            cartTotal: 0,
+            
     }
 
     // upon component mount, running setProducts function
@@ -77,9 +78,9 @@ class ProductProvider extends React.Component {
 
         addToCart = (id)=>{
 
-                let tempProducts = [...this.state.products]; 
+                let tempProducts = [...this.state.products];
                 let index = tempProducts.indexOf(this.getItem(id));
-                const product = tempProducts[index]; 
+                const product = tempProducts[index];
                 product.inCart = true;
                 product.count = 1;
                 const price = product.price;
@@ -88,11 +89,16 @@ class ProductProvider extends React.Component {
                     this.setState(()=>{
                         return {products:tempProducts, cart: [...this.state.cart, product]}
                                             
+                }, 
+                ()=>{
+                    this.addTotals();
                 })
         };
 
 
 
+        
+        
         openModal = id =>{
             // Retrieving specific item ID via getItem function above in code.
             const product = this.getItem(id);
@@ -101,6 +107,9 @@ class ProductProvider extends React.Component {
                 return{modalProduct: product, modalOpen:true}
             });
         }
+
+
+
 
         closeModal = () =>{
             this.setState(()=>{
@@ -111,8 +120,10 @@ class ProductProvider extends React.Component {
         // Cart Functions below
 
         increment = (id) =>{
-            console.log("this is the increment function"); 
+    
+    
         }
+
         decrement = (id) =>{
             
             console.log("this is the increment function"); 
@@ -121,10 +132,37 @@ class ProductProvider extends React.Component {
             // Remove last element added to array
             console.log("this is the increment function"); 
         }
-        clearCart = () =>{ 
-            // Remove elements from cart
+        clearCart = (id) =>{ 
+            let tempProducts = [...this.state.products];
+            let index = tempProducts.indexOf(this.getItem(id));
+            const product = tempProducts[index];
+            product.inCart = false;
+            product.count = 0;
+            this.setState(()=>{
+                return {cart: []}
+            })
             
+
         }
+
+        addTotals=()=>{
+
+                    let subTotal =  this.state.cartSubtotal;
+                    // looping through cart to add all item totals to subTotal
+                    this.state.cart.map(item=>(subTotal += item.total));
+                    const tempTax = subTotal * 0.10;
+                    const tax = parseFloat(tempTax.toFixed(2)); 
+                    const total = subTotal + tax;
+                    this.setState(()=>{
+                        return{ 
+                            cartSubtotal:subTotal,
+                            cartTax: tax,
+                            cartTotal: total
+                        }
+                    })
+
+        }
+
 
     render(){
             return (

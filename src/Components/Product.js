@@ -18,7 +18,7 @@ export default class Product extends React.Component{
                 {value=>{
                     
                     return(
-                        <div class="col-md-4">
+                        <div class="col-md-4 W-100">
                         <figure class="card card-product">
                         
 

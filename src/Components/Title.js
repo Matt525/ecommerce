@@ -6,7 +6,7 @@ export default class Title extends React.Component {
 
         return (
             <section className="text-center mt-5">
-                <CartColumns />
+                
             </section>
         )
 

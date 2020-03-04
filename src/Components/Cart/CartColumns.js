@@ -1,39 +1,35 @@
 import React, { Component } from 'react'
 import {ProductContainer, ProductConsumer} from '../../context';
+import './columnStyle.scss'; 
 
 export default class CartColumns extends Component {
     render() {
+
         
         return (
             <ProductConsumer>
                 {value=>{
                     return(
                         <React.Fragment>
-                            <h1>Your Cart</h1>
-                        <div className="container-fluid text-center mt-5 mb-0">
-                        <div className="row">
-                            <div className="col-10 mx-auto col-lg-2">
-                                <p className="text-uppercase">Products</p>
-                            </div>
-                            <div className="col-10 mx-auto col-lg-2">
-                                <p className="text-uppercase">name of product</p>
-                            </div>
-                            <div className="col-10 mx-auto col-lg-2">
-                                <p className="text-uppercase">price</p>
-                            </div>
-                            <div className="col-10 mx-auto col-lg-2">
-                                <p className="text-uppercase">quantity</p>
-                            </div>
-                            <div className="col-10 mx-auto col-lg-2">
-                                <p className="text-uppercase">remove</p>
-                            </div>
-                            <div className="col-10 mx-auto col-lg-2">
-                                <p className="text-uppercase">total</p>
-                            </div>
-                        </div>
-
-                    </div>
-
+                                <h1 className="text-center">Your Cart</h1>
+                                        
+                                            <div id="labels" className="row">
+                                                <div className="col-sm item-column text-center">
+                                                    <h4 className="text-uppercase">Products</h4>
+                                                </div>
+                                                <div className="col-sm item-column text-center">
+                                                    <h4 className="text-uppercase">name of product</h4>
+                                                </div>
+                                                <div className="col-sm item-column text-center">
+                                                    <h4 className="text-uppercase">price</h4>
+                                                </div>
+                                                <div className="col-sm item-column text-center">
+                                                    <h4 className="text-uppercase">Remove</h4>
+                                                </div>
+                                                <div className="col-sm item-column text-center">
+                                                    <h4 className="text-uppercase">quantity</h4>
+                                                </div>               
+                                        </div>
                     </React.Fragment>
                     )
                 }}

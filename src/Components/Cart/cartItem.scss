@@ -1,0 +1,30 @@
+@import '../_Partial.scss'; 
+
+#quantity { 
+    position: initial;
+}
+
+.quantityBtn{ 
+    display: flex;
+    flex-wrap: nowrap;
+    max-height: 38px!important;
+    justify-content: center;
+    align-items: center!important;
+
+}
+
+.col{ 
+    display: flex;
+    justify-content: center;
+    max-height: 200px;
+    align-items: center;
+}
+
+.row{ 
+    max-height: 400px;
+
+}
+
+.img-col > img{ 
+    height: 150px;
+}
