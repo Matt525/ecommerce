@@ -20,7 +20,8 @@ export default function CartItem({item, value}) {
                                 <div id="quantity" className="col">
                                 <span>Total: $</span>{total}</div>
                         </div>
-                        <div className="col"><i class="fas fa-trash"></i></div>
+                        
+                        <div className="col" onClick={()=>{removeItem(id)}}><i class="fas fa-trash"></i></div>
                         <div className="col quantityBtn">
                                 <span className="btn btn-primary" onClick={()=>{decrement(id)}}> - </span>
                                 <div className="col d-flex justify-content-center" style={{width: '100px'}}>{<h3>{count}</h3>}</div>                                                    
