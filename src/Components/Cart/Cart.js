@@ -1,5 +1,5 @@
 import React from 'react'; 
-import {ProductConsumer} from '../context';
+import {ProductConsumer} from '../../context';
 
 
 class Cart extends React.Component{ 

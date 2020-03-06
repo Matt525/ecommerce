@@ -1,5 +1,9 @@
-import React from 'react'
-import {storeProducts, detailProduct} from './data'; 
+import React from 'react';
+import {storeProducts, detailProduct} from './data';
+
+
+
+
 const ProductContext = React.createContext(); 
 
 class ProductProvider extends React.Component {
@@ -11,8 +15,12 @@ class ProductProvider extends React.Component {
             products: [],
             detailProduct: detailProduct,
             cart: [],
-            show: true,
-            modalProduct: detailProduct 
+            modalOpen: false, 
+            modalProduct: detailProduct,
+            cartTax: 0,
+            cartSubtotal:0,
+            cartTotal: 0,
+            
     }
 
     // upon component mount, running setProducts function
@@ -20,6 +28,10 @@ class ProductProvider extends React.Component {
     componentDidMount(){
             this.setProducts();
     }
+
+
+
+    // Iterating through storeProducts via forEach to pull individual items and push them to another defined array.
 
     setProducts = ()=>{
             let tempProducts = []
@@ -39,10 +51,9 @@ class ProductProvider extends React.Component {
                             // Pulling item by id 
 
                         getItem = (id)=>{
-                            // Finding particular product through find
+                            // Finding particular product through find. Item.id equal to id passed into argument.
                             const product = this.state.products.find(item=> item.id === id);
                             return product;
-                            
                         }
 
 
@@ -64,9 +75,9 @@ class ProductProvider extends React.Component {
 
         addToCart = (id)=>{
 
-                let tempProducts = [...this.state.products]; 
+                let tempProducts = [...this.state.products];
                 let index = tempProducts.indexOf(this.getItem(id));
-                const product = tempProducts[index]; 
+                const product = tempProducts[index];
                 product.inCart = true;
                 product.count = 1;
                 const price = product.price;
@@ -79,31 +90,110 @@ class ProductProvider extends React.Component {
 
         }
 
-        showModal=()=>{
+        
+        
+        openModal = id =>{
             // Retrieving specific item ID via getItem function above in code.
             const product = this.getItem(id);
             // Changing values within state upon call
             this.setState(()=>{
-                return{show:false, modalProduct: product}
+                return{modalProduct: product, modalOpen:true}
             });
-            
         }
 
-        hideModal=()=>{
+
+
+
+
+
+
+
+
+        closeModal = () =>{
             this.setState(()=>{
-                return{show:false,}
+                return {modalOpen:false};
             });
+        }
+
+
+
+        // Cart Functions below
+
+        increment = (id) =>{
+            // set state to tempCart for this function
+            let tempCart = [...this.state.cart]; 
+            // set variable for selected product that matches ID. Returning first matching element within the array.
+            const selectedProduct = tempCart.find(item=>item.id === id);
+            // index variable returns index of item within array.
+            const index = tempCart.indexOf(selectedProduct); 
             
+            const product = tempCart[index];
+            
+            product.count = product.count +1;
+            product.total = product.total * 0.10;
+
 
         }
 
-    
+        decrement = (id) =>{
+            let tempCart = [...this.state.cart];
+            const selectedProduct = tempCart.find(item=>item.id === id);
+            const index = tempCart.indexOf(selectedProduct);
+            const product = tempCart[index]; 
+            product.count = product.count -1; 
+            product.count = product.total  * 0.10; 
+        }
 
+        removeItem = (id) =>{
+            // Remove last element added to array
+                let tempProducts = [...this.state.products];
+                let tempCart = [...this.state.cart];
+                tempCart = tempCart.filter(item=>item.id!==id);
+                const index = tempProducts.indexOf(this.getItem(id));
+                let removedProduct = tempProducts[index];
+                removedProduct.inCart = false;
+                removedProduct.count = 0;
+                removedProduct.total = 0;
 
+                this.setState(()=>{
+                    return { 
+                        cart:[...tempCart], products:[...tempProducts],
+                    }
+                },()=>{
+                    this.addTotals();
+                })
+            
+             
+        }
+        clearCart = (id) =>{ 
+            this.setState(()=>{
+                return {cart: []}
+            },()=>{
+                this.setProducts();
+                this.addTotals();
 
-
+            })
+            
         
+        }
 
+        addTotals=()=>{
+
+                    let subTotal =  this.state.cartSubtotal;
+                    // looping through cart to add all item totals to subTotal
+                    this.state.cart.map(item=>(subTotal += item.total));
+                    const tempTax = subTotal * 0.10;
+                    const tax = parseFloat(tempTax.toFixed(2)); 
+                    const total = subTotal + tax;
+                    this.setState(()=>{
+                        return{ 
+                            cartSubtotal:subTotal,
+                            cartTax: tax,
+                            cartTotal: total
+                        }
+                    })
+
+        }
 
 
     render(){

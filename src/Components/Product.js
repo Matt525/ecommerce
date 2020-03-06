@@ -1,8 +1,8 @@
 import React from 'react'; 
 import './Product.scss';
 import {Link} from 'react-router-dom';
-import {productConsumer, ProductConsumer} from '../context';
-import PropTypes from 'prop-types'; 
+import {ProductConsumer} from '../context';
+import PropTypes from 'prop-types';
 
 
 export default class Product extends React.Component{ 
@@ -12,18 +12,19 @@ export default class Product extends React.Component{
         // Pulling from Data.js
         const {id, title, img, price, inCart} = this.props.value;
     
+
         return(
             <ProductConsumer>
                 {value=>{
                     
                     return(
-                        <div class="col-md-4">
+                        <div class="col-md-4 W-100">
                         <figure class="card card-product">
                         
 
                             {/* Image Topper */}
                             <Link to="/details">
-                                    <div class="img-wrap"><img src={img} onClick={()=>{value.handleDetail(id)}} /></div>
+                                    <div class="img-wrap"><img src={img} alt="product" onClick={()=>{value.handleDetail(id)}} /></div>
                             </Link>
                                     {/* Info Container */}
                                     <figcaption class="info-wrap">
@@ -35,7 +36,6 @@ export default class Product extends React.Component{
                                             </div> 
                                     </figcaption>
         
-{/*                             
 
         
                                     {/* Bottom container */}
@@ -43,8 +43,8 @@ export default class Product extends React.Component{
                                         
                                         {/* Button */}
         
-                                        <a href="" class="btn btn-sm btn-primary float-right" disables={inCart?true : false} onClick={(event)=>{
-                                            event.preventDefault(); value.addToCart(id); value.showModal()
+                                        <a href="" class="btn btn-sm btn-primary float-right" disabled={inCart?true : false} onClick={(event)=>{
+                                            event.preventDefault(); value.addToCart(id); value.openModal(id);
                                             }}>
                                             {inCart?(<a className="in-cart-message" disabled>Item In Cart</a>):(<a href="" class="btn btn-sm btn-primary float-right" disabled>Add To Cart</a>)}
                                         </a>
@@ -59,6 +59,7 @@ export default class Product extends React.Component{
                     </div>
                     )
                 }}
+
            
             </ProductConsumer>
                     
@@ -72,8 +73,7 @@ export default class Product extends React.Component{
         
         }
 
-        
-
+        // Setting proptypes to check for property types within code.
 
         Product.propTypes = {
             product:PropTypes.shape({

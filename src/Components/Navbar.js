@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../bootstrap-4.3.1-dist/css/bootstrap.min.css';
 import './Navbar.scss';
 import logo from './Photo_source/ecommerce_icon.png';
 import {Link, Router} from 'react-router-dom';

@@ -29,7 +29,7 @@ export default class Details extends React.Component{
                                                 <h1>{title}</h1>
                                                 <h3>${price}</h3>
                                                 <p>{info}</p>
-                                                <button onClick={()=>{value.addToCart(id)}} className="btn btn-sm btn-primary" disabled={inCart?true:false}>Add To Cart</button>
+                                                <button onClick={()=>{value.addToCart(id); value.openModel(id)}} className="btn btn-sm btn-primary" disabled={inCart?true:false}>Add To Cart</button>
                                                 &nbsp;&nbsp;
                                                 <button className="btn btn-sm btn-info">Back to Results</button>
                                             </div>    

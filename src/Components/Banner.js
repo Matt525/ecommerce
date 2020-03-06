@@ -14,7 +14,7 @@ export default function Banner() {
             <div class="container">
             
             <div  class="intro-banner-wrap">
-                <img style={bannerStyle} src={winter_banner} class="img-fluid rounded" />
+                <img style={bannerStyle} src={winter_banner} alt="banner" className="img-fluid rounded" />
             </div>
             
             </div> 
