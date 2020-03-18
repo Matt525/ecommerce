@@ -32,9 +32,9 @@ class Projects extends Component {
       <Card height="100%">
         <CardImg top height="340px" width="100%" src="https://i.ytimg.com/vi/v3orh07cRPA/maxresdefault.jpg" alt="Card image cap" />
         <CardBody style={{padding: '20px'}}>
-          <CardTitle>Patatap Clone</CardTitle>
-          <CardSubtitle>Press keys and trigger animation/sound </CardSubtitle>
-          <CardText>This is a clone of the Patatap.com web app that utilitzes vanilla JS, paperJS and howlerJS to bring you a fun interactive web application.</CardText>
+          <CardTitle>E-Commerce Website</CardTitle>
+          <CardSubtitle>ReactJS E-Commerce Website </CardSubtitle>
+          <CardText>This is a fully functional E-commerce website build in ReactJS with JavaScript. Includes PayPal integration.</CardText>
           <Button style={{margin: '10px'}}><a style={{color: 'white'}} href="https://suspicious-heyrovsky-63d4b0.netlify.com">Demo</a></Button>
           <Button><a style={{color: 'white'}} href="https://github.com/Matt525/patatapclone">Code</a></Button>
         </CardBody>
