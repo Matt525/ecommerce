@@ -103,12 +103,6 @@ class ProductProvider extends React.Component {
 
 
 
-
-
-
-
-
-
         closeModal = () =>{
             this.setState(()=>{
                 return {modalOpen:false};
@@ -203,8 +197,8 @@ class ProductProvider extends React.Component {
                     <ProductContext.Provider value={{...this.state,
                     handleDetail: this.handleDetail,
                     addToCart: this.addToCart,
-                    hideModal: this.hideModal,
-                    showModal: this.showModal
+                    closeModal: this.closeModal,
+                    openModal: this.openModal
                     }}>
                     
                         {this.props.children}

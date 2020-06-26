@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 export default class Product extends React.Component{ 
 
     render(){
-
+            
         // Pulling from Data.js
         const {id, title, img, price, inCart} = this.props.value;
     
