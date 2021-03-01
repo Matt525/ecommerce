@@ -6,7 +6,6 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.1.2",
-    "caniuse-lite": "^1.0.30001192",
     "node-sass": "^4.14.1",
     "postcss-attribute-case-insensitive": "^4.0.1",
     "react": "^16.14.0",
@@ -14,7 +13,6 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.3.1",
     "styled-components": "^5.2.1",
-    "yarn": "^1.22.10"
   },
   "scripts": {
     "start": "react-scripts start",
