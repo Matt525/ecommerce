@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.1.2",
+    "caniuse-lite": "^1.0.30001192",
     "node-sass": "^4.14.1",
     "postcss-attribute-case-insensitive": "^4.0.1",
     "react": "^16.14.0",
