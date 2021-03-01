@@ -15,10 +15,10 @@ function App() {
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <Link to="/">
           {/* Card Image */}
-        <img src={logo} class="d-flex nav-link" alt="" style={{height: '100px', width: '120px', marginLeft: '400%', }}/>
+        <img src={logo} class="d-flex nav-link" alt="" style={{height: '100px', width: '120px', marginLeft: '100%', }}/>
           </Link>
                   {/* Search Bar & Button */}
-              <form class="form-inline" style={{marginLeft: '23.5%', marginRight: '50px'}}>
+              <form class="form-inline" style={{marginLeft: '9%', marginRight: '50px'}}>
                   <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search" />
                   <button class="btn btn-danger my-sm-0" type="submit"><i class="fas fa-search-location"></i></button>
               </form>
